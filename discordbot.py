@@ -14,6 +14,9 @@ token = os.environ['DISCORD_BOT_TOKEN']
 ID_readme = 768272323341320232
 ID_clanmember = 666361330827132979
 
+# 接続に必要なオブジェクトを生成
+client = discord.Client()
+
 @client.event  
 async def on_raw_reaction_add(payload):  
     channel = client.get_channel(payload.channel_id)
