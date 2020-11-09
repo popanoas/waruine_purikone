@@ -1,5 +1,6 @@
 from discord.ext import commands
 import discord
+import os
 intents=discord.Intents.all()
 intents.typing = False
 import traceback
