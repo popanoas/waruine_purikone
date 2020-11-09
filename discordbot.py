@@ -16,7 +16,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 # 接続に必要なオブジェクトを生成
 client = discord.Client(intents=intents)
 
-ID_CHANNEL_README = 768272323341320232 # 該当のチャンネルのID
+ID_CHANNEL_README = 768272323341320232 #readmeチャンネルのID
 ID_ROLE_WELCOME = 666361330827132979 # 当月クランメンバーのID
 
 @client.event
