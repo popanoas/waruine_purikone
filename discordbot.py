@@ -18,7 +18,6 @@ client = discord.Client(intents=intents)
 
 ID_CHANNEL_README = 768272323341320232 #readmeチャンネルのID
 ID_ROLE_WELCOME = 666361330827132979 # 当月クランメンバーのID
-ID_CHANNEL_ZANGE = 741739653245173800
 
 @client.event
 async def on_raw_reaction_add(payload):
@@ -33,13 +32,6 @@ async def on_raw_reaction_add(payload):
     await member.add_roles(role)
     msg = await channel.send('ようこそ！' + member.name + 'さん！')
     await asyncio.sleep(5) 
-    await msg.delete()    
-
-@client.event
-async def on_raw_reaction_add(self, reaction, user):
-    if channel.id == ID_CHANNEL_ZANGE:
-        if payload.emoji.name == '\N{GRINNING FACE}':
-            text = "父と子とゴデチアのみ名によって、" + message.author.name + "の罪をゆるします。アーメン。安心して行きなさい"
-            await channel.send(text)    
+    await msg.delete()
     
 client.run(token)
