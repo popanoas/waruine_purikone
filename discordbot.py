@@ -30,9 +30,9 @@ async def on_raw_reaction_add(payload):
     role = guild.get_role(ID_ROLE_WELCOME)
 
     await member.add_roles(role)
-    msg = await channel.send('ようこそ！' + member.name + 'さん！')
-    await asyncio.sleep(5) 
-    await msg.delete()
+    #msg = await channel.send('ようこそ！' + member.name + 'さん！')
+    #await asyncio.sleep(5) 
+    #await msg.delete()
 
   
     
